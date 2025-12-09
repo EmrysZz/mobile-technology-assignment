@@ -20,9 +20,8 @@ class AboutActivity : AppCompatActivity() {
             finish()
         }
 
-        // Requirement: Clickable GitHub Repository URL [cite: 47]
         tvGithubLink.setOnClickListener {
-            val url = "https://github.com/EmrysZz/mobile-technology-assignment.git" // Replace this!
+            val url = "https://github.com/EmrysZz/mobile-technology-assignment.git"
             val intent = Intent(Intent.ACTION_VIEW)
             intent.data = Uri.parse(url)
             startActivity(intent)
